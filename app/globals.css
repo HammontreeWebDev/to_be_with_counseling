@@ -10,9 +10,21 @@
   --forest-green: #304529;
   --teal: #7B9F9F;
   --white: #FFFFFF;
+}
 
-  /* Font Styles: */
-  
+/* font-style classes */
+
+.big-script-header {
+  font-family: var(--bd-script);
+  font-size: 100px;
+}
+
+.normal-ovo-header {
+  font-family: var(--ovo-font);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (prefers-color-scheme: dark) {
