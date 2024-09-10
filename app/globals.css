@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 :root {
+  /* Color Scheme: */
   --sage-green: #BFC8AC;
   --light-brown: #C2B19C;
   --medium-brown: #9A7B6C;
   --forest-green: #304529;
   --teal: #7B9F9F;
   --white: #FFFFFF;
+
+  /* Font Styles: */
+  
 }
 
 @media (prefers-color-scheme: dark) {
