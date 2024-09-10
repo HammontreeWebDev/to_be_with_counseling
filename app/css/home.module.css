@@ -14,10 +14,29 @@
 }
 
 .navBar{
+    position: relative;
     display: flex;
     flex-direction: row;
     color: var(--white);
     align-items: center;
     justify-content: space-around;
     width: 70%;
+}
+
+.toggleDropdown{
+    position: absolute;
+    background-color: var(--sage-green);
+    font-size: 30px;
+}
+
+.fakeLink{
+    cursor: pointer;
+}
+
+.linkStyle{
+    padding: 1%;
+}
+
+.linkStyle:hover{
+    background-color: var(--forest-green);
 }
