@@ -1,7 +1,6 @@
 'use client'
-
-import styles from "../../../css/home.module.css";
 import Link from "next/link";
+import styles from "../../../css/homeNavBar.module.css";
 import { useState } from "react";
 import Image from "next/image";
 

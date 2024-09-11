@@ -1,61 +1,18 @@
-.headerContainer{
-    width: 100vw;
+.heroImgSection {
     background-color: var(--forest-green);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.headerTitle{
-    color: var(--sage-green);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.navBar{
     position: relative;
-    display: flex;
-    flex-direction: row;
-    color: var(--white);
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
+    width: 100vw;
 }
 
-.toggleDropdown{
+.heroImg {
     position: absolute;
-    top: 0;
-    background-color: var(--sage-green);
-    font-size: 30px;
-    margin-top: 5%;
+    z-index: -3;
 }
-
-.fakeLink{
-    user-select: none;
-    display: flex;
-    align-items: center;
+.heroVector {
+    position: absolute;
+    z-index: -2;
 }
-
-.arrowSpan{
-    transition: filter 0.3s ease;
-    cursor: pointer;
-}
-
-.arrowSpan:hover{
-filter: brightness(0) saturate(100%) invert(76%) sepia(11%) saturate(440%) hue-rotate(75deg) brightness(87%) contrast(86%);
-}
-
-.hoverMainLink:hover{
-    color: var(--sage-green);
-}
-
-.linkStyle{
-    padding: 1%;
-    color: var(--white);
-}
-
-.linkStyle:hover{
-    background-color: var(--forest-green);
-    color: var(--sage-green);
+.heroLogo {
+    position: absolute;
+    z-index: -1;
 }
