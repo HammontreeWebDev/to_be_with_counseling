@@ -3,35 +3,42 @@
 import styles from "../../../css/home.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function HomeNavBar() {
 
     const [toggleDropdown, setToggleDropdown] = useState(false);
 
-    const activateDropdown = () => {
-        setToggleDropdown(true);
-    }
-
-    const deactivateDropdown = () => {
-        setToggleDropdown(false);
+    const dropdownToggle = () => {
+        setToggleDropdown(!toggleDropdown);
     }
 
     return (
         <header className={styles.headerContainer}>
             <h1 className={`${styles.headerTitle} big-script-header`}> Karah Hammontree </h1>
             <nav className={`${styles.navBar} normal-ovo-header`}>
-                <Link href='/about'>About</Link>
+                <Link className={styles.hoverMainLink} href='/about'>About</Link>
 
                 <p
-                    className={styles.fakeLink}
-                    onClick={activateDropdown}
-                    onMouseLeave={deactivateDropdown}
+                    className={`${styles.fakeLink} ${styles.hoverMainLink}`}
+                    onClick={dropdownToggle}
                 >
                     Counseling
-
+                    <span
+                        className={styles.arrowSpan}
+                        onClick={dropdownToggle}
+                    >
+                        <Image
+                            src='/img/downArrow.svg'
+                            height={35}
+                            width={35}
+                        />
+                    </span>
                     {
                         toggleDropdown ?
-                            <ul className={`${styles.toggleDropdown} animate__animated animate__backInDown`}>
+                            <ul
+                                className={`${styles.toggleDropdown} animate__animated animate__fadeInDown`}
+                            >
                                 <li className={styles.linkStyle}>
                                     <Link href='/counseling/#philosophy'>
                                         Philosophy
@@ -60,8 +67,8 @@ export default function HomeNavBar() {
                     }
 
                 </p>
-                <Link href='/equine-therapy'>Equine Therapy</Link>
-                <Link href='/contact'>Contact</Link>
+                <Link className={styles.hoverMainLink} href='/equine-therapy'>Equine Therapy</Link>
+                <Link className={styles.hoverMainLink} href='/contact'>Contact</Link>
             </nav>
         </header>
     )

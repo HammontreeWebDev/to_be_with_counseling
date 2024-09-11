@@ -25,18 +25,32 @@
 
 .toggleDropdown{
     position: absolute;
+    top: 0;
     background-color: var(--sage-green);
     font-size: 30px;
+    margin-top: 5%;
 }
 
 .fakeLink{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrowSpan:hover{
+color: var(--sage-green);
+}
+
+.hoverMainLink:hover{
+    color: var(--sage-green);
 }
 
 .linkStyle{
     padding: 1%;
+    color: var(--white);
 }
 
 .linkStyle:hover{
     background-color: var(--forest-green);
+    color: var(--sage-green);
 }
