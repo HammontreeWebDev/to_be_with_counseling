@@ -32,13 +32,18 @@
 }
 
 .fakeLink{
-    cursor: pointer;
+    user-select: none;
     display: flex;
     align-items: center;
 }
 
+.arrowSpan{
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
 .arrowSpan:hover{
-color: var(--sage-green);
+filter: brightness(0) saturate(100%) invert(76%) sepia(11%) saturate(440%) hue-rotate(75deg) brightness(87%) contrast(86%);
 }
 
 .hoverMainLink:hover{

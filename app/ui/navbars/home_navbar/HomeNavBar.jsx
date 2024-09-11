@@ -20,8 +20,7 @@ export default function HomeNavBar() {
                 <Link className={styles.hoverMainLink} href='/about'>About</Link>
 
                 <p
-                    className={`${styles.fakeLink} ${styles.hoverMainLink}`}
-                    onClick={dropdownToggle}
+                    className={`${styles.fakeLink}`}
                 >
                     Counseling
                     <span
@@ -32,6 +31,7 @@ export default function HomeNavBar() {
                             src='/img/downArrow.svg'
                             height={35}
                             width={35}
+                            alt="down arrow"
                         />
                     </span>
                     {
