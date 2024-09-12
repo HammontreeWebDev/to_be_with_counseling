@@ -11,6 +11,7 @@ export default function Home() {
       <main>
         {/* Hero Image Section */}
         <section className={styles.heroImgSection}>
+
           <Image
             className={`${styles.heroImg} animate__animated animate__fadeInDown`}
             src='/img/homeHero.png'
@@ -18,6 +19,9 @@ export default function Home() {
             width={1920}
             alt="trees surrounding a lake with a mountain in the background"
           />
+
+          <div className={styles.heroOverlay}></div>
+
           <Image
             className={`${styles.heroVector} animate__animated animate__fadeInLeft`}
             src='/img/homeHeroVector.svg'
@@ -26,7 +30,7 @@ export default function Home() {
             alt="vector image in the shape of a triangle"
           />
           <Image
-            className={`${styles.heroLogo} animate__animated animate__fadeIn`}
+            className={`${styles.heroLogo} animate__animated animate__fadeInUp`}
             src='/img/heroLogo.png'
             height={1274}
             width={1920}

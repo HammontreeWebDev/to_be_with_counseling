@@ -1,18 +1,41 @@
 .heroImgSection {
-    background-color: var(--forest-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100vw;
 }
 
 .heroImg {
     position: absolute;
-    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -4;
 }
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100vw;
+    height: 107vh;
+    background: var(--forest-green);
+    opacity: 0.5;
+    z-index: -3;
+  }
+
 .heroVector {
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: -2;
 }
+
 .heroLogo {
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
