@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <HomeNavBar />
 
-      <main>
+      <main className={`antialiased`}>
         {/* Hero Image Section */}
         <section className={styles.heroImgSection}>
 
@@ -42,7 +42,7 @@ export default function Home() {
         <section className={styles.homeContainer}>
 
           <div className={styles.row}>
-            <h1 className={`script-titles`}>
+            <h1 className={` ${styles.welcomeSlogan} script-titles`}>
               Restored To Your Home
             </h1>
           </div>

@@ -30,7 +30,6 @@
     position: absolute;
     top: 0;
     background-color: var(--sage-green);
-    font-size: 30px;
     margin-top: 5%;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .arrowSpan:hover {
-filter: brightness(0) saturate(100%) invert(76%) sepia(11%) saturate(440%) hue-rotate(75deg) brightness(87%) contrast(86%);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(11%) saturate(440%) hue-rotate(75deg) brightness(87%) contrast(86%);
 }
 
 .hoverMainLink:hover {
@@ -61,4 +60,46 @@ filter: brightness(0) saturate(100%) invert(76%) sepia(11%) saturate(440%) hue-r
 .linkStyle:hover {
     background-color: #a5ae93;
     color: var(--forest-green);
+}
+
+@media screen and (max-width: 1700px) {
+    .navBar {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .headerContainer {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navBar {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .linkStyle,
+    .mainLink,
+    .fakeLink {
+        margin-top: 3%;
+    }
+
+    .toggleDropdown {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
 }

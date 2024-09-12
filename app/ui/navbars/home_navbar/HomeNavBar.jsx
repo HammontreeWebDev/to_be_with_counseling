@@ -16,7 +16,7 @@ export default function HomeNavBar() {
         <header className={styles.headerContainer}>
             <h1 className={`${styles.headerTitle} big-script-header`}> Karah Hammontree </h1>
             <nav className={`${styles.navBar} normal-ovo-header`}>
-                <Link className={styles.hoverMainLink} href='/about'>About</Link>
+                <Link className={styles.mainLink} href='/about'>About</Link>
 
                 <p
                     className={`${styles.fakeLink}`}
@@ -36,7 +36,7 @@ export default function HomeNavBar() {
                     {
                         toggleDropdown ?
                             <ul
-                                className={`${styles.toggleDropdown} animate__animated animate__fadeInDown`}
+                                className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
                             >
                                 <li className={styles.linkStyle}>
                                     <Link href='/counseling/#philosophy'>
@@ -66,8 +66,8 @@ export default function HomeNavBar() {
                     }
 
                 </p>
-                <Link className={styles.hoverMainLink} href='/equine-therapy'>Equine Therapy</Link>
-                <Link className={styles.hoverMainLink} href='/contact'>Contact</Link>
+                <Link className={styles.mainLink} href='/equine-therapy'>Equine Therapy</Link>
+                <Link className={styles.mainLink} href='/contact'>Contact</Link>
             </nav>
         </header>
     )
