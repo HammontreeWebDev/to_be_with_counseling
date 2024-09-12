@@ -37,6 +37,16 @@ export default function Home() {
             alt="to be with counselings brand logo"
           />
         </section>
+
+        {/* Home Section */}
+        <section className={styles.homeContainer}>
+
+          <div className={styles.row}>
+            <h1 className={`script-titles`}>
+              Restored To Your Home
+            </h1>
+          </div>
+        </section>
       </main>
     </>
   );
