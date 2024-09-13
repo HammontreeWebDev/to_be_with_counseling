@@ -1,6 +1,7 @@
 import HomeNavBar from "./ui/navbars/home_navbar/HomeNavBar";
 import styles from "./css/home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import 'animate.css';
 
 export default function Home() {
@@ -59,7 +60,13 @@ export default function Home() {
             </div>
 
             <div className={styles.secondColumn}>
-              <h2 className={`big-ovo-header text-forest-green`}>Karah Hammontree MA, RMHCI</h2>
+              <h2 className={`big-ovo-header text-forest-green text-center`}>Karah Hammontree MA, RMHCI</h2>
+
+              <p className={`big-body-text text-forest-green text-center`}>
+              Karah is a Registered Mental Health Counselor Intern in the State of Florida who is passionate about walking alongside her clients in their search for long-lasting freedom from eating disorders, body image issues, and body shame. In assisting her clients uncover the root issues that have contributed to the development of an unhealthy relationship with food and body, she has witnessed the unequivocal transformation that occurs when one is able to come back home to themselves, utilizing compassion, kindness, and curiosity, in this needed restoration process.
+              </p>
+
+              <Link href='/about' className={`customButton sub-ovo-header`}>Learn More</Link>
             </div>
 
           </div>
