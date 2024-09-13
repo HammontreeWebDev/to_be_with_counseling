@@ -14,12 +14,12 @@ export default function HomeNavBar() {
 
     return (
         <header className={styles.headerContainer}>
-            <h1 className={`${styles.headerTitle} big-script-header`}> Karah Hammontree </h1>
+            <h1 className={`${styles.headerTitle} big-script-header text-sage-green`}> Karah Hammontree </h1>
             <nav className={`${styles.navBar} normal-ovo-header`}>
-                <Link className={styles.mainLink} href='/about'>About</Link>
+                <Link className={`${styles.mainLink} text-white`} href='/about'>About</Link>
 
                 <p
-                    className={`${styles.fakeLink}`}
+                    className={`${styles.fakeLink} text-white`}
                 >
                     Counseling
                     <span
@@ -66,8 +66,8 @@ export default function HomeNavBar() {
                     }
 
                 </p>
-                <Link className={styles.mainLink} href='/equine-therapy'>Equine Therapy</Link>
-                <Link className={styles.mainLink} href='/contact'>Contact</Link>
+                <Link className={`${styles.mainLink} text-white`} href='/equine-therapy'>Equine Therapy</Link>
+                <Link className={`${styles.mainLink} text-white`} href='/contact'>Contact</Link>
             </nav>
         </header>
     )

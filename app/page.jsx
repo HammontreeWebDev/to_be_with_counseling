@@ -41,10 +41,27 @@ export default function Home() {
         {/* Home Section */}
         <section className={styles.homeContainer}>
 
-          <div className={styles.row}>
+          <div className={styles.firstRow}>
             <h1 className={` ${styles.welcomeSlogan} script-titles`}>
               Restored To Your Home
             </h1>
+          </div>
+
+          <div className={styles.secondRow}>
+
+            <div className={styles.firstColumn}>
+              <Image
+              src='/img/homeAvatar.png'
+              width={720}
+              height={720}
+              alt="Karah Hammontree"
+              />
+            </div>
+
+            <div className={styles.secondColumn}>
+              <h2 className={`big-ovo-header text-forest-green`}>Karah Hammontree MA, RMHCI</h2>
+            </div>
+
           </div>
         </section>
       </main>

@@ -12,6 +12,20 @@
   --white: #FFFFFF;
 }
 
+/* color classes: */
+
+.text-forest-green {
+  color: var(--forest-green);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-sage-green {
+  color: var(--sage-green);
+}
+
 /* font-style classes */
 
 .big-script-header {
@@ -28,6 +42,14 @@
 .normal-ovo-header {
   font-family: var(--ovo-font);
   font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.big-ovo-header {
+  font-family: Ovo;
+  font-size: 70px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -59,7 +81,7 @@ body {
     font-size: 75px;
   }
 
-  .script-titles { 
+  .script-titles {
     font-size: 150px;
   }
 
@@ -68,7 +90,7 @@ body {
   }
 
   .sub-ovo-header {
-   font-size: 22.3px;
+    font-size: 22.3px;
   }
 }
 

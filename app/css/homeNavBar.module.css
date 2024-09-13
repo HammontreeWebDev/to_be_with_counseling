@@ -10,7 +10,6 @@
 }
 
 .headerTitle {
-    color: var(--sage-green);
     padding-left: 20px;
     padding-right: 20px;
     user-select: none;
@@ -48,13 +47,12 @@
     filter: brightness(0) saturate(100%) invert(76%) sepia(11%) saturate(440%) hue-rotate(75deg) brightness(87%) contrast(86%);
 }
 
-.hoverMainLink:hover {
+.mainLink:hover {
     color: var(--sage-green);
 }
 
 .linkStyle {
     padding: 1%;
-    color: var(--white);
 }
 
 .linkStyle:hover {
