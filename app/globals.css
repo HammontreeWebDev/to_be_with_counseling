@@ -26,6 +26,10 @@
   color: var(--sage-green);
 }
 
+.text-light-brown {
+  color: var(--light-brown);
+}
+
 /* font-style classes */
 
 .big-script-header {
@@ -48,7 +52,7 @@
 }
 
 .big-ovo-header {
-  font-family: Ovo;
+  font-family: var(--ovo-font);
   font-size: 70px;
   font-style: normal;
   font-weight: 400;
@@ -64,16 +68,34 @@
 }
 
 .big-body-text {
-  font-family: Ovo;
+  font-family: var(--ovo-font);
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
+/* TODO: add media queries for below text classes */
+
 .body-text {
-  font-family: Ovo;
+  font-family: var(--ovo-font);
   font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.copyright {
+  font-family: var(--ovo-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.disclaimer {
+  font-family: var(--ovo-font);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

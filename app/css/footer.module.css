@@ -41,3 +41,7 @@
     align-items: center;
     gap: 10px;
 }
+
+.disclaimerHover:hover {
+    color: var(--teal);
+}
