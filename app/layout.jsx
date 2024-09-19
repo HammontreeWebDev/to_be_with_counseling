@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./ui/footer/Footer";
 
 const bdScript = localFont({
   src: "./fonts/BDScript-Regular.woff",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         className={`${bdScript.variable} ${ovoFont.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

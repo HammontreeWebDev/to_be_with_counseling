@@ -71,6 +71,14 @@
   line-height: normal;
 }
 
+.body-text {
+  font-family: Ovo;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* random */
 
 .customButton {
