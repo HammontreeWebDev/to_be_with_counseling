@@ -75,8 +75,6 @@
   line-height: normal;
 }
 
-/* TODO: add media queries for below text classes */
-
 .body-text {
   font-family: var(--ovo-font);
   font-size: 25px;
@@ -154,6 +152,18 @@ body {
   .big-body-text {
     font-size: 37.5px;
   }
+
+  .body-text {
+    font-size: 18.75px;
+  }
+
+  .copyright {
+    font-size: 13.5px;
+  }
+
+  .disclaimer {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -182,5 +192,17 @@ body {
 
   .big-body-text {
     font-size: 25px;
+  }
+
+  .body-text {
+    font-size: 12.5px;
+  }
+
+  .copyright {
+    font-size: 9px;
+  }
+
+  .disclaimer {
+    font-size: 8px;
   }
 }
