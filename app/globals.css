@@ -99,6 +99,16 @@
   line-height: normal;
 }
 
+/* TODO: update media queries for below font sizes */
+
+.nav-header-ovo {
+  font-family: Ovo;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* random */
 
 .customButton {
@@ -127,7 +137,7 @@ body {
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
 
   .big-script-header {
     font-size: 75px;

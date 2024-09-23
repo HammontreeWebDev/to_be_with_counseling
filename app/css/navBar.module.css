@@ -21,8 +21,16 @@
     flex-direction: row;
     color: var(--white);
     align-items: center;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: space-between;
+    margin-right: 20px;
+    width:55%;
+}
+
+.textContainer {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .toggleDropdown {
@@ -60,13 +68,13 @@
     color: var(--forest-green);
 }
 
-@media screen and (max-width: 1700px) {
-    .navBar {
-        width: 60%;
-    }
+.commonTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
     .headerContainer {
         flex-direction: column;
         width: 100%;
@@ -78,6 +86,7 @@
         width: 100%;
         align-items: center;
         padding: 10px;
+        margin-right: 0px;
     }
 
     .linkStyle,
