@@ -112,6 +112,7 @@ const TextureMesh = () => {
               gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
           }
         `}
+        // TODO: Ensure uniform values are to client satisfaction
         uniforms={{
           u_size: { value: 20 },
           u_octaves: { value: 2 },

@@ -180,7 +180,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   .big-script-header {
     font-size: 50px;
     /* Reduce header font size */
