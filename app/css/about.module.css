@@ -75,14 +75,40 @@
     max-width: none;
 }
 
+.contentRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 21.57vh 5.4vw 21.57vh 5.4vw;
+    gap: 6.87vw;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.miniColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentColumn {
+    display: flex;
+    width: 91.66vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9.25vh;
+}
+
 @media screen and (max-width: 1660px) {
     .titleRow {
         flex-direction: column;
         min-height: none;
     }
+
     .bulletContainer {
         min-height: none;
     }
+
     .bullet {
         margin-top: none;
     }
