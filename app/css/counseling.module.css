@@ -1,25 +1,20 @@
-/* TODO: Fix alignment issues -explore flexbox instead of absolute maybe? */
 .titleContainer {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    min-height: 148.4vh;
-    background: rgba(191, 200, 172, 0.70);
-}
-
-.titleImage {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-    z-index: -1;
+    background-image: url('/img/counselingTitleImage.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .titleSlogan {
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    /* transform: translate(-50%, -50%); */
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(191, 200, 172, 0.70);
+    padding-top: 24vh;
+    padding-bottom: 24vh;
 }
