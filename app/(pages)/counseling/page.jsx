@@ -1,6 +1,7 @@
 'use client';
 import styles from '@/app/css/counseling.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function about() {
     return (
@@ -46,6 +47,10 @@ export default function about() {
 
             <section className={`${styles.disclaimerContainer}`}>
                 <p className={`${styles.disclaimerText} big-body-text text-center text-forest-green`}>There are sliding scale options for those who are eligible. You may apply if you believe you may qualify. </p>
+
+                <Link href={'/contact'} className={`customButton sub-ovo-header`}>Contact</Link>
+
+                <p className={`${styles.smallDisclaimer} sub-ovo-header text-forest-green text-center`}>Please be advised, to respect both the provider and the clients on the waitlist, we uphold a 24-hour cancellation policy. If the appointment is not cancelled within 24-hours, the full fee will be charged.</p>
             </section>
         </main>
     )

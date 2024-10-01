@@ -78,3 +78,13 @@
     gap: 20px;
     padding: 60px;
 }
+
+.disclaimerText{
+    padding-bottom: 6%;
+}
+
+.smallDisclaimer{
+    padding-top: 6%;
+    font-weight: 900;
+    font-style: italic;
+}
