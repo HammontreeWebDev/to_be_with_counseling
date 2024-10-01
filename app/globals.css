@@ -30,6 +30,10 @@
   color: var(--light-brown);
 }
 
+.text-med-brown {
+  color: var(--medium-brown);
+}
+
 .bg-trans-teal {
   background-color: rgba(123, 159, 159, 0.2);
 }
