@@ -15,10 +15,12 @@
 }
 
 .withContainer {
-    position: relative;
     min-height: 100vh;
     min-width: 100vw;
     overflow: hidden;
+    background: url('/img/shaderBackground.svg');
+    background-size: cover;
+    background-position: center;
 }
 
 .aboutContainer {

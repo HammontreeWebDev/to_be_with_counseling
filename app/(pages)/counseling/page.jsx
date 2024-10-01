@@ -2,6 +2,7 @@
 import styles from '@/app/css/counseling.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import ShaderBackground from '@/app/ui/about/ShaderBackground';
 
 export default function about() {
     return (
@@ -14,7 +15,7 @@ export default function about() {
 
             <section className={`${styles.philosophyContainer}`}>
                 <div className={`${styles.philosophyColumn}`}>
-                    <h2 className={`big-ovo-header text-center text-med-brown`}>Philosophy</h2>
+                    <h2 className={`big-ovo-header text-center text-med-brown ${styles.title}`}>Philosophy</h2>
 
                     <p className='big-body-text text-forest-green'>Do you struggle with eating behaviors, body shame, or trauma that affects your ability to live the life you want to live? Do you feel overwhelmed, frustrated, or confused by your relationship with food and your life story that has contributed to this relationship? Perhaps you wonder if you could ever have a relationship with food, your body, or yourself that feels freeing and whole, instead of one that leaves you feeling trapped and empty? Now more than ever, people of all genders, ages, and ethnicities are experiencing the effects of eating disorders, body shame, and trauma. </p>
 
@@ -26,31 +27,53 @@ export default function about() {
                 </div>
             </section>
 
-            <section className={`${styles.servicesContainer}`}>
-                <h2 className={`big-ovo-header text-center text-med-brown`} >Services & Fees</h2>
+            <div className={styles.backgroundWrapper}>
+                <section className={`${styles.servicesContainer}`}>
+                    <h2 className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Services & Fees</h2>
 
-                <div className={`${styles.servicesRow}`}>
-                    <Image
-                        src={'/img/services.png'}
-                        height={1040}
-                        width={880}
-                        alt='women in chairs'
-                    />
+                    <div className={`${styles.servicesRow}`}>
+                        <Image
+                            src={'/img/services.png'}
+                            height={1040}
+                            width={880}
+                            alt='women in chairs'
+                        />
 
-                    <div className={`${styles.servicesColumn}`}>
-                        <p className='big-body-text text-right text-forest-green'>$120/up to 50 min session </p>
+                        <div className={`${styles.servicesColumn}`}>
+                            <p className='big-body-text text-right text-forest-green'>$120/up to 50 min session </p>
 
-                        <p className='big-body-text text-right text-forest-green'>We do not accept insurance; however, we can provide you with a bill that you can submit to your insurance for possible reimbursement. It is up to you to contact your insurance and ask about out-of-network benefits for mental health coverage. Many clients have been able to receive partial reimbursement from their insurance company. </p>
+                            <p className='big-body-text text-right text-forest-green'>We do not accept insurance; however, we can provide you with a bill that you can submit to your insurance for possible reimbursement. It is up to you to contact your insurance and ask about out-of-network benefits for mental health coverage. Many clients have been able to receive partial reimbursement from their insurance company. </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className={`${styles.disclaimerContainer}`}>
-                <p className={`${styles.disclaimerText} big-body-text text-center text-forest-green`}>There are sliding scale options for those who are eligible. You may apply if you believe you may qualify. </p>
+                <section className={`${styles.disclaimerContainer}`}>
+                    <p className={`${styles.disclaimerText} big-body-text text-center text-forest-green`}>There are sliding scale options for those who are eligible. You may apply if you believe you may qualify. </p>
 
-                <Link href={'/contact'} className={`customButton sub-ovo-header`}>Contact</Link>
+                    <Link href={'/contact'} className={`customButton sub-ovo-header`}>Contact</Link>
 
-                <p className={`${styles.smallDisclaimer} sub-ovo-header text-forest-green text-center`}>Please be advised, to respect both the provider and the clients on the waitlist, we uphold a 24-hour cancellation policy. If the appointment is not cancelled within 24-hours, the full fee will be charged.</p>
+                    <p className={`${styles.smallDisclaimer} sub-ovo-header text-forest-green text-center`}>Please be advised, to respect both the provider and the clients on the waitlist, we uphold a 24-hour cancellation policy. If the appointment is not cancelled within 24-hours, the full fee will be charged.</p>
+                </section>
+            </div>
+
+            <section className={`${styles.goodFaithContainer}`}>
+
+                <h2 className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Good Faith Estimate</h2>
+
+                <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>You have the right to receive a “Good Faith Estimate” explaining how much your medical and mental health care will cost.</p>
+
+                <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>Under the law, health care providers need to give patients who don&apos;t have insurance or who are not using insurance an estimate of the expected charges for medical services, including psychotherapy services.</p>
+
+                <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>You have the right to receive a Good Faith Estimate for the total expected cost of any non-emergency healthcare services, including psychotherapy services.</p>
+
+                <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>You can ask your health care provider, and any other provider you choose, for a Good Faith Estimate before you schedule a service.</p>
+
+                <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>If you receive a bill that is at least $400 more than your Good Faith Estimate, you can dispute the bill. Make sure to save a copy or picture of your Good Faith Estimate.</p>
+
+                <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>For questions or more information about your right to a Good Faith Estimate, visit <span className={`text-link`}>
+                    <Link href={'https://www.cms.gov/nosurprises'}>www.cms.gov/nosurprises</Link>
+                    </span>.</p>
+
             </section>
         </main>
     )

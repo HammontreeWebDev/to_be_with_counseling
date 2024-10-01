@@ -34,6 +34,17 @@
   color: var(--medium-brown);
 }
 
+.text-link {
+  color: var(--teal);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.text-link:hover {
+  color: var(--sage-green);
+  text-decoration: underline;
+}
+
 .bg-trans-teal {
   background-color: rgba(123, 159, 159, 0.2);
 }
