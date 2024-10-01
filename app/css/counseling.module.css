@@ -68,3 +68,13 @@
     gap: 100px;
     flex-shrink: 0;
 }
+
+.disclaimerContainer {
+    display: flex;
+    width: 97.9vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px;
+}
