@@ -55,25 +55,25 @@ export default function CommonNavBar() {
                                 className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
                             >
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#philosophy'>
+                                    <Link href='/counseling/#philosophy' onClick={dropdownToggle}>
                                         Philosophy
                                     </Link>
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#services-and-fees'>
+                                    <Link href='/counseling/#services-and-fees' onClick={dropdownToggle}>
                                         Services & Fees
                                     </Link>
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#good-faith-estimate'>
+                                    <Link href='/counseling/#good-faith-estimate' onClick={dropdownToggle}>
                                         Good Faith Estimate
                                     </Link>
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#resources'>
+                                    <Link href='/counseling/#resources' onClick={dropdownToggle}>
                                         Resources
                                     </Link>
                                 </li>

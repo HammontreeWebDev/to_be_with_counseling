@@ -2,7 +2,6 @@
 import styles from '@/app/css/counseling.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import ShaderBackground from '@/app/ui/about/ShaderBackground';
 
 export default function about() {
     return (
@@ -15,7 +14,7 @@ export default function about() {
 
             <section className={`${styles.philosophyContainer}`}>
                 <div className={`${styles.philosophyColumn}`}>
-                    <h2 className={`big-ovo-header text-center text-med-brown ${styles.title}`}>Philosophy</h2>
+                    <h2 id='philosophy' className={`big-ovo-header text-center text-med-brown ${styles.title}`}>Philosophy</h2>
 
                     <p className='big-body-text text-forest-green'>Do you struggle with eating behaviors, body shame, or trauma that affects your ability to live the life you want to live? Do you feel overwhelmed, frustrated, or confused by your relationship with food and your life story that has contributed to this relationship? Perhaps you wonder if you could ever have a relationship with food, your body, or yourself that feels freeing and whole, instead of one that leaves you feeling trapped and empty? Now more than ever, people of all genders, ages, and ethnicities are experiencing the effects of eating disorders, body shame, and trauma. </p>
 
@@ -29,7 +28,7 @@ export default function about() {
 
             <div className={styles.backgroundWrapper}>
                 <section className={`${styles.servicesContainer}`}>
-                    <h2 className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Services & Fees</h2>
+                    <h2 id='services-and-fees' className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Services & Fees</h2>
 
                     <div className={`${styles.servicesRow}`}>
                         <Image
@@ -58,7 +57,7 @@ export default function about() {
 
             <section className={`${styles.goodFaithContainer}`}>
 
-                <h2 className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Good Faith Estimate</h2>
+                <h2 id='good-faith-estimate' className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Good Faith Estimate</h2>
 
                 <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>You have the right to receive a “Good Faith Estimate” explaining how much your medical and mental health care will cost.</p>
 
