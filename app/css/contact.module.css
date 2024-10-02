@@ -29,6 +29,10 @@
     align-items: center;
     gap: 50px;
     flex-shrink: 0;
+    background-image: url('/img/shaderBackground.svg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -3%;
 }
 
 .contactColumn {
@@ -47,6 +51,10 @@
     align-items: center;
     gap: 10px;
 }
+
+/* TODO: check icon sizes for mobile */
+/* TODO: find out why some mobile devices show gap on right */
+
 
 @media screen and (max-width: 900px) {
     .contactRow {
