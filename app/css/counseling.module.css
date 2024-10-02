@@ -17,6 +17,8 @@
     background: rgba(191, 200, 172, 0.70);
     padding-top: 24vh;
     padding-bottom: 24vh;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .philosophyContainer {
@@ -66,6 +68,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    text-align: right;
     gap: 100px;
     flex-shrink: 0;
 }
@@ -117,4 +120,16 @@
 
 .title {
     padding-top: 6%;
+}
+
+@media screen and (max-width: 1660px) {
+    .servicesRow {
+        flex-direction: column;
+    }
+
+    .servicesColumn {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
 }
