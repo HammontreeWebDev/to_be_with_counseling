@@ -3,7 +3,7 @@ import styles from '@/app/css/counseling.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function about() {
+export default function counseling() {
     return (
         <main>
             <section className={`${styles.titleContainer}`}>
