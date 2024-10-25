@@ -6,12 +6,17 @@ import Image from "next/image";
 
 export default function HomeNavBar() {
 
-    const [toggleDropdown, setToggleDropdown] = useState(false);
+    const [toggleDropdownContact, setToggleDropdownContact] = useState(false);
+    const [toggleDropdownEquine, setToggleDropdownEquine] = useState(false);
 
-    const dropdownToggle = () => {
-        setToggleDropdown(!toggleDropdown);
-    }
+    const dropdownToggleContact = () => {
+        setToggleDropdownContact(!toggleDropdownContact);
+    };
 
+    const dropdownToggleEquine = () => {
+        setToggleDropdownEquine(!toggleDropdownEquine);
+    };
+    
     return (
         <header className={styles.headerContainer}>
             <h1 className={`${styles.headerTitle} big-script-header text-sage-green`}> Karah Hammontree </h1>
@@ -24,7 +29,7 @@ export default function HomeNavBar() {
                     Counseling
                     <span
                         className={styles.arrowSpan}
-                        onClick={dropdownToggle}
+                        onClick={dropdownToggleContact}
                     >
                         <Image
                             src='/img/downArrow.svg'
@@ -34,30 +39,37 @@ export default function HomeNavBar() {
                         />
                     </span>
                     {
-                        toggleDropdown ?
+                        toggleDropdownContact ?
                             <ul
                                 className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
                             >
+
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#philosophy' onClick={dropdownToggle}>
+                                    <Link href='/counseling' onClick={dropdownToggleContact}>
+                                        Counseling
+                                    </Link>
+                                </li>
+
+                                <li className={styles.linkStyle}>
+                                    <Link href='/counseling/#philosophy' onClick={dropdownToggleContact}>
                                         Philosophy
                                     </Link>
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#services-and-fees' onClick={dropdownToggle}>
+                                    <Link href='/counseling/#services-and-fees' onClick={dropdownToggleContact}>
                                         Services & Fees
                                     </Link>
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#good-faith-estimate' onClick={dropdownToggle}>
+                                    <Link href='/counseling/#good-faith-estimate' onClick={dropdownToggleContact}>
                                         Good Faith Estimate
                                     </Link>
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#resources' onClick={dropdownToggle}>
+                                    <Link href='/counseling/#resources' onClick={dropdownToggleContact}>
                                         Resources
                                     </Link>
                                 </li>
@@ -66,7 +78,63 @@ export default function HomeNavBar() {
                     }
 
                 </p>
-                <Link className={`${styles.mainLink} text-white`} href='/equine-therapy'>Equine Therapy</Link>
+
+                <p
+                    className={`${styles.fakeLink} text-white`}
+                >
+                    Equine Therapy
+                    <span
+                        className={styles.arrowSpan}
+                        onClick={dropdownToggleEquine}
+                    >
+                        <Image
+                            src='/img/downArrow.svg'
+                            height={35}
+                            width={35}
+                            alt="down arrow"
+                        />
+                    </span>
+                    {
+                        toggleDropdownEquine ?
+                            <ul
+                                className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
+                            >
+
+                                <li className={styles.linkStyle}>
+                                    <Link href='/equine-therapy' onClick={dropdownToggleEquine}>
+                                        Equine Therapy
+                                    </Link>
+                                </li>
+
+                                <li className={styles.linkStyle}>
+                                    <Link href='/equine-therapy/#philosophy' onClick={dropdownToggleEquine}>
+                                        Philosophy
+                                    </Link>
+                                </li>
+
+                                <li className={styles.linkStyle}>
+                                    <Link href='/equine-therapy/#services-and-fees' onClick={dropdownToggleEquine}>
+                                        Services & Fees
+                                    </Link>
+                                </li>
+
+                                <li className={styles.linkStyle}>
+                                    <Link href='/equine-therapy/#good-faith-estimate' onClick={dropdownToggleEquine}>
+                                        Good Faith Estimate
+                                    </Link>
+                                </li>
+
+                                <li className={styles.linkStyle}>
+                                    <Link href='/equine-therapy/#resources' onClick={dropdownToggleEquine}>
+                                        Resources
+                                    </Link>
+                                </li>
+
+                            </ul> : null
+                    }
+
+                </p>
+
                 <Link className={`${styles.mainLink} text-white`} href='/contact'>Contact</Link>
             </nav>
         </header>
