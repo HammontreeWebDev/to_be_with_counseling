@@ -64,7 +64,7 @@ export default function contact() {
                     </div>
 
                     <a
-                        className={`customButton`}
+                        className={`customButton sub-ovo-header`}
                         href='mailto:Karah.Hammontree@gmail.com'
                         onClick={handleEmailClick}
                     >
