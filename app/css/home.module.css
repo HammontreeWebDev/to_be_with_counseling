@@ -95,6 +95,13 @@
     text-align: center;
 }
 
+@media screen and (max-width: 1660px) {
+    .secondRow, .secondColumn, .homeContainer {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .secondRow {
         flex-direction: column;
@@ -109,8 +116,6 @@
 
     .homeContainer {
         gap: 50px;
-        /* Reduce the gap between elements */
-        padding: 10px 0;
     }
 
     .row {
@@ -123,6 +128,5 @@
 
     .homeContainer {
         gap: 30px;
-        padding: 5px 0;
     }
 }
