@@ -56,6 +56,13 @@
 /* TODO: find out why some mobile devices show gap on right */
 
 
+@media screen and (max-width: 1660px) {
+    .titleSlogan, .contactContainer, .contactColumn {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .contactRow {
         flex-direction: column;
