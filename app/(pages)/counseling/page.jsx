@@ -215,6 +215,70 @@ export default function counseling() {
 
                 {/* //! Trauma */}
 
+                <Resources
+                    title="Trauma"
+                    productList={
+                        [
+                            {
+                                id: 1,
+                                name: 'The Body Keeps The Score: Brain, Mind, and Body in the Healing of Trauma',
+                                author: 'Bessel VanDerKolk',
+                                href: 'https://amzn.to/40DEMxT',
+                                imageSrc: '/img/score.jpg',
+                                imageAlt: 'Book - The Body Keeps The Score: Brain, Mind, and Body in the Healing of Trauma',
+                            },
+                            {
+                                id: 2,
+                                name: 'No Bad Parts',
+                                author: 'Richard Schwartz',
+                                href: 'https://amzn.to/3O211WE',
+                                imageSrc: '/img/badParts.jpg',
+                                imageAlt: 'Book - No Bad Parts',
+                            },
+                            {
+                                id: 3,
+                                name: 'The Best of You',
+                                author: 'Alison Cook',
+                                href: 'https://amzn.to/3AA19K8',
+                                imageSrc: '/img/bestOfYou.jpg',
+                                imageAlt: 'Book - The Best of You',
+                            },
+                            {
+                                id: 4,
+                                name: 'What My Bones Know',
+                                author: 'Stephanie Foo',
+                                href: 'https://amzn.to/3YWq1VF',
+                                imageSrc: '/img/bones.jpg',
+                                imageAlt: 'Book - What My Bones Know',
+                            },
+                            {
+                                id: 5,
+                                name: 'The Primal Wound',
+                                author: 'Nancy Newton Verrier',
+                                href: 'https://amzn.to/4fB7eVq',
+                                imageSrc: '/img/primal.jpg',
+                                imageAlt: 'Book - The Primal Wound',
+                            },
+                            {
+                                id: 6,
+                                name: 'To Be Told',
+                                author: 'Dan Allender',
+                                href: 'https://amzn.to/4hEtv6q',
+                                imageSrc: '/img/told.jpg',
+                                imageAlt: 'Book - To Be Told',
+                            },
+                            {
+                                id: 7,
+                                name: 'The Healing Path',
+                                author: 'Dan Allender',
+                                href: 'https://amzn.to/3CfWPQK',
+                                imageSrc: '/img/healing.jpg',
+                                imageAlt: 'Book - The Healing Path',
+                            },
+                        ]
+                    }
+                />
+
                 {/* //! Relationships */}
 
                 {/* //! Children's Books */}
