@@ -281,6 +281,45 @@ export default function counseling() {
 
                 {/* //! Relationships */}
 
+                <Resources
+                    title="Relationships"
+                    productList={
+                        [
+                            {
+                                id: 1,
+                                name: 'Boundaries',
+                                author: 'Henry Cloud and John Townsend',
+                                href: 'https://amzn.to/3Ck0jBG',
+                                imageSrc: '/img/boundaries.jpg',
+                                imageAlt: 'Book - Boundaries',
+                            },
+                            {
+                                id: 2,
+                                name: 'Safe People',
+                                author: 'Henry Cloud and John Townsend',
+                                href: 'https://amzn.to/4fDw0Ef',
+                                imageSrc: '/img/safe.jpg',
+                                imageAlt: 'Book - Safe People',
+                            },
+                            {
+                                id: 3,
+                                name: 'Attached',
+                                author: 'Amir Levine and Rachel Heller',
+                                href: 'https://amzn.to/40zrKl5',
+                                imageSrc: '/img/attached.jpg',
+                                imageAlt: 'Book - Attached',
+                            },
+                            {
+                                id: 4,
+                                name: 'Securely Attached',
+                                author: 'Eli Harwood',
+                                href: 'https://amzn.to/4hFljTp',
+                                imageSrc: '/img/securely.jpg',
+                                imageAlt: 'Book - Securely Attached',
+                            },
+                        ]
+                    }
+                />
                 {/* //! Children's Books */}
             </section>
         </main>
