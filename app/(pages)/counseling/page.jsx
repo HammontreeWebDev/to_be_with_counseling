@@ -189,6 +189,30 @@ export default function counseling() {
 
                 {/* //! Embodiment */}
 
+                <Resources
+                    title="Embodiment"
+                    productList={
+                        [
+                            {
+                                id: 1,
+                                name: 'The Wisdom of Your Body',
+                                author: 'Hillary McBride',
+                                href: 'https://amzn.to/3UDo5P9',
+                                imageSrc: '/img/wisdom.jpg',
+                                imageAlt: 'Book - The Wisdom of Your Body',
+                            },
+                            {
+                                id: 2,
+                                name: 'Practices For Embodied Living',
+                                author: 'Hillary McBride',
+                                href: 'https://amzn.to/3YEXzGv',
+                                imageSrc: '/img/practices.jpg',
+                                imageAlt: 'Book - Practices For Embodied Living',
+                            },
+                        ]
+                    }
+                />
+
                 {/* //! Trauma */}
 
                 {/* //! Relationships */}
