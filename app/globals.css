@@ -10,6 +10,8 @@
   --forest-green: #304529;
   --teal: #7B9F9F;
   --white: #FFFFFF;
+
+  --trans-teal: rgba(123, 159, 159, 0.2);
 }
 
 /* color classes: */
