@@ -80,6 +80,7 @@ export default function counseling() {
 
                 <h2 id='resources' className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Resources</h2>
 
+                {/* //! Eating Disorders */}
                 <Resources
                     title="Eating Disorders"
                     productList={
@@ -152,6 +153,47 @@ export default function counseling() {
                     }
                 />
 
+                {/* //! Body Image */}
+
+                <Resources
+                    title="Body Image"
+                    productList={
+                        [
+                            {
+                                id: 1,
+                                name: 'Mothers, Daughters, and Body Image',
+                                author: 'Hillary McBride',
+                                href: 'https://amzn.to/4fEtXjy',
+                                imageSrc: '/img/mothers.jpg',
+                                imageAlt: 'Book - Mothers, Daughters, and Body Image',
+                            },
+                            {
+                                id: 2,
+                                name: 'Soul-Deep Beauty: Fighting for Our True Worth in a World Demanding Flawless',
+                                author: 'Melissa Johnson',
+                                href: 'https://amzn.to/3YEOxJt',
+                                imageSrc: '/img/soul.jpg',
+                                imageAlt: 'Book - Soul-Deep Beauty: Fighting for Our True Worth in a World Demanding Flawless',
+                            },
+                            {
+                                id: 3,
+                                name: 'Body Image Inside Out',
+                                author: 'Deb Schachter & Whitney Otto',
+                                href: 'https://amzn.to/3AzpO1i',
+                                imageSrc: '/img/body.jpg',
+                                imageAlt: 'Book - Body Image Inside Out',
+                            },
+                        ]
+                    }
+                />
+
+                {/* //! Embodiment */}
+
+                {/* //! Trauma */}
+
+                {/* //! Relationships */}
+
+                {/* //! Children's Books */}
             </section>
         </main>
     )
