@@ -2,6 +2,7 @@
 import styles from '@/app/css/counseling.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Resources from '@/app/ui/common/Resources';
 
 export default function counseling() {
     return (
@@ -71,7 +72,85 @@ export default function counseling() {
 
                 <p className={`${styles.goodFaithText} big-body-text text-center text-forest-green`}>For questions or more information about your right to a Good Faith Estimate, visit <span className={`text-link`}>
                     <Link href={'https://www.cms.gov/nosurprises'}>www.cms.gov/nosurprises</Link>
-                    </span>.</p>
+                </span>.</p>
+
+            </section>
+            {/* //! Resources */}
+            <section className={`${styles.backgroundWrapper}`}>
+
+                <h2 id='resources' className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Resources</h2>
+
+                <Resources
+                    title="Eating Disorders"
+                    productList={
+                        [
+                            {
+                                id: 1,
+                                name: 'Embodiment and Eating Disorders',
+                                author: 'Hillary McBride',
+                                href: 'https://amzn.to/48FjbqG',
+                                imageSrc: '/img/embodiement.jpg',
+                                imageAlt: 'Book - Embodiment and Eating Disorders',
+                            },
+                            {
+                                id: 2,
+                                name: 'Sick Enough: A Guide to the Medical Complications of Eating Disorders',
+                                author: 'Jennifer Gaudiani',
+                                href: 'https://amzn.to/3YW0zPX',
+                                imageSrc: '/img/sickEnough.jpg',
+                                imageAlt: 'Book - Sick Enough: A Guide to the Medical Complications of Eating Disorders',
+                            },
+                            {
+                                id: 3,
+                                name: 'Life Without Ed',
+                                author: 'Jenni Schaefer',
+                                href: 'https://amzn.to/4fHiyiV',
+                                imageSrc: '/img/lifeWithout.jpg',
+                                imageAlt: 'Book - Life Without Ed',
+                            },
+                            {
+                                id: 4,
+                                name: 'Goodbye Ed, Hello Me',
+                                author: 'Jenni Schaefer',
+                                href: 'https://amzn.to/4focts0',
+                                imageSrc: '/img/goodbyeEd.jpg',
+                                imageAlt: 'Book - Goodbye Ed, Hello Me',
+                            },
+                            {
+                                id: 5,
+                                name: '8 Keys To Recovery Workbook',
+                                author: 'Carolyn Costin',
+                                href: 'https://amzn.to/3CjnP1H',
+                                imageSrc: '/img/8Keys.jpg',
+                                imageAlt: 'Book - 8 Keys To Recovery Workbook',
+                            },
+                            {
+                                id: 6,
+                                name: 'Intuitive Eating Book 4th Edition',
+                                author: 'Evelyn Tribole and Elyse Resch',
+                                href: 'https://amzn.to/4emrPfb',
+                                imageSrc: '/img/4thEd.jpg',
+                                imageAlt: 'Book - Intuitive Eating Book 4th Edition',
+                            },
+                            {
+                                id: 7,
+                                name: 'Intuitive Eating Workbook',
+                                author: 'Evelyn Tribole and Elyse Resch',
+                                href: 'https://amzn.to/3AKDWES',
+                                imageSrc: '/img/workbook.jpg',
+                                imageAlt: 'Book - Intuitive Eating Workbook',
+                            },
+                            {
+                                id: 8,
+                                name: 'Intuitive Eating Workbook for Teens',
+                                author: 'Elyse Resch',
+                                href: 'https://amzn.to/4hGGu7D',
+                                imageSrc: '/img/teens.jpg',
+                                imageAlt: 'Book - Intuitive Eating Workbook for Teens',
+                            }
+                        ]
+                    }
+                />
 
             </section>
         </main>
