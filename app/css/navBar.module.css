@@ -95,11 +95,17 @@
     }
 
     .toggleDropdown {
-        width: 100vw;
-        height: 100vh;
+        position: fixed;
         top: 0;
         left: 0;
-        text-align: center;
+        background-color: var(--sage-green);
+        margin-top: 0%;
+        width: 100vw;
+        height: 100vh;
+    }
+    .linkStyle {
+        display: flex;
+        justify-content: center;
     }
 }
 

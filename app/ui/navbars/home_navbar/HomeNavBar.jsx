@@ -74,6 +74,15 @@ export default function HomeNavBar() {
                                     </Link>
                                 </li>
 
+                                <li className={styles.linkStyle} onClick={dropdownToggleContact}>
+                                    <Image
+                                    height={25}
+                                    width={25}
+                                    src={'/img/closeButton.svg'}
+                                    alt="close icon"
+                                    />
+                                </li>
+
                             </ul> : null
                     }
 
@@ -128,6 +137,14 @@ export default function HomeNavBar() {
                                     <Link href='/equine-therapy/#FAQ' onClick={dropdownToggleEquine}>
                                         FAQ
                                     </Link>
+                                </li>
+                                <li className={styles.linkStyle} onClick={dropdownToggleEquine}>
+                                    <Image
+                                    height={25}
+                                    width={25}
+                                    src={'/img/closeButton.svg'}
+                                    alt="close icon"
+                                    />
                                 </li>
 
                             </ul> : null
