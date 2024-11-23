@@ -321,6 +321,55 @@ export default function counseling() {
                     }
                 />
                 {/* //! Children's Books */}
+
+                <Resources
+                    title="Children's Books"
+                    productList={
+                        [
+                            {
+                                id: 1,
+                                name: 'Fat and Beautiful',
+                                author: 'Debbie Saroufim',
+                                href: 'https://amzn.to/4epcLgC',
+                                imageSrc: '/img/fat.jpg',
+                                imageAlt: 'Book - Fat and Beautiful',
+                            },
+                            {
+                                id: 2,
+                                name: 'Bodies Are Cool',
+                                author: 'Tyler Feder',
+                                href: 'https://amzn.to/40F5PZz',
+                                imageSrc: '/img/bodies.jpg',
+                                imageAlt: 'Book - Bodies Are Cool',
+                            },
+                            {
+                                id: 3,
+                                name: 'The Reflection In Me',
+                                author: 'Marc Colagiovanni',
+                                href: 'https://amzn.to/4emeF1B',
+                                imageSrc: '/img/reflection.jpg',
+                                imageAlt: 'Book - The Reflection In Me',
+                            },
+                            {
+                                id: 4,
+                                name: 'The Rabbit Listened',
+                                author: 'Cori Doerrfeld',
+                                href: 'https://amzn.to/4esqx21',
+                                imageSrc: '/img/rabbit.jpg',
+                                imageAlt: 'Book - The Rabbit Listened',
+                            },
+                            {
+                                id: 5,
+                                name: 'Trying',
+                                author: 'Kobi Yamada',
+                                href: 'https://amzn.to/48Fl6eS',
+                                imageSrc: '/img/trying.jpg',
+                                imageAlt: 'Book - Trying',
+                            },
+                        ]
+                    }
+                />
+
             </section>
         </main>
     )
