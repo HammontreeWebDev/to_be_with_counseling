@@ -16,8 +16,8 @@ export default function FAQ({ faqList }) {
                     <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
                         {faqs.map((faq) => (
                             <div key={faq.id}>
-                                <dt className="text-base/7 font-semibold body-text text-[var(--medium-brown)]">{faq.question}</dt>
-                                <dd className="mt-2 text-base/7 copyright text-[var(--forest-green)]">{faq.answer}</dd>
+                                <dt className="text-base/7 font-semibold sub-ovo-header text-[var(--medium-brown)]">{faq.question}</dt>
+                                <dd className="mt-2 text-base/7 body-text text-[var(--forest-green)]">{faq.answer}</dd>
                             </div>
                         ))}
                     </dl>
