@@ -48,7 +48,7 @@ export default function CommonNavBar() {
                         onClick={dropdownToggleContact}
                     >
                         <Image
-                            src='/img/downArrow.svg'
+                           src='/img/downArrow.svg'
                             height={35}
                             width={35}
                             alt="down arrow"
@@ -141,8 +141,8 @@ export default function CommonNavBar() {
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy/#resources' onClick={dropdownToggleEquine}>
-                                        Resources
+                                    <Link href='/equine-therapy/#FAQ' onClick={dropdownToggleEquine}>
+                                        FAQ
                                     </Link>
                                 </li>
 

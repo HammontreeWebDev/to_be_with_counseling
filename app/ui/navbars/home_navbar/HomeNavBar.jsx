@@ -125,8 +125,8 @@ export default function HomeNavBar() {
                                 </li>
 
                                 <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy/#resources' onClick={dropdownToggleEquine}>
-                                        Resources
+                                    <Link href='/equine-therapy/#FAQ' onClick={dropdownToggleEquine}>
+                                        FAQ
                                     </Link>
                                 </li>
 
