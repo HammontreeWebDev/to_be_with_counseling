@@ -21,8 +21,7 @@
     flex-direction: row;
     color: var(--white);
     align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
+    justify-content: space-around;
     width:55%;
 }
 

@@ -24,7 +24,6 @@
 }
 
 .aboutContainer {
-    position: relative;
     display: flex;
     width: 100vw;
     flex-direction: column;
@@ -69,11 +68,11 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
     min-height: 28vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .bulletContainer {
@@ -110,6 +109,7 @@
     justify-content: center;
     align-items: center;
     gap: 9.25vh;
+    padding-left: 2%;
 }
 
 @media screen and (max-width: 1660px) {
