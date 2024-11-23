@@ -77,7 +77,7 @@ export default function counseling() {
             </section>
 
             {/* //! FAQ Section */}
-            <section className={`${styles.backgroundWrapper}`}>
+            <section id='FAQ' className={`${styles.backgroundWrapper}`}>
                 {/* Place FAQ Component Below */}
 
                 <FAQ
