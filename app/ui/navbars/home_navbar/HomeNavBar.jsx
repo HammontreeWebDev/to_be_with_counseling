@@ -16,7 +16,7 @@ export default function HomeNavBar() {
     const dropdownToggleEquine = () => {
         setToggleDropdownEquine(!toggleDropdownEquine);
     };
-    
+
     return (
         <header className={styles.headerContainer}>
             <h1 className={`${styles.headerTitle} big-script-header text-sage-green`}> Karah Hammontree </h1>
@@ -75,12 +75,15 @@ export default function HomeNavBar() {
                                 </li>
 
                                 <li className={styles.linkStyle} onClick={dropdownToggleContact}>
-                                    <Image
-                                    height={25}
-                                    width={25}
-                                    src={'/img/closeButton.svg'}
-                                    alt="close icon"
-                                    />
+                                    <div className="flex justify-center items-center">
+                                        <Image
+                                            height={25}
+                                            width={25}
+                                            src={'/img/closeButton.svg'}
+                                            alt="close icon"
+                                        />
+                                        <p className="copyright">&nbsp;close</p>
+                                    </div>
                                 </li>
 
                             </ul> : null
@@ -139,12 +142,15 @@ export default function HomeNavBar() {
                                     </Link>
                                 </li>
                                 <li className={styles.linkStyle} onClick={dropdownToggleEquine}>
-                                    <Image
-                                    height={25}
-                                    width={25}
-                                    src={'/img/closeButton.svg'}
-                                    alt="close icon"
-                                    />
+                                    <div className="flex justify-center items-center">
+                                        <Image
+                                            height={25}
+                                            width={25}
+                                            src={'/img/closeButton.svg'}
+                                            alt="close icon"
+                                        />
+                                        <p className="copyright">&nbsp;close</p>
+                                    </div>
                                 </li>
 
                             </ul> : null
