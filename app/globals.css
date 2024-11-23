@@ -74,7 +74,7 @@
 
 .big-ovo-header {
   font-family: var(--ovo-font);
-  font-size: 70px;
+  font-size: 52.5px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -90,7 +90,7 @@
 
 .big-body-text {
   font-family: var(--ovo-font);
-  font-size: 50px;
+  font-size: 37.5px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -120,11 +120,9 @@
   line-height: normal;
 }
 
-/* TODO: update media queries for below font sizes */
-
-.nav-header-ovo {
-  font-family: Ovo;
-  font-size: 55px;
+.nav-header {
+  font-family: var(--ovo-font);
+  font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -178,10 +176,13 @@ body {
   }
 
   .big-ovo-header {
-    font-size: 52.5px;
+    font-size: 39.375px;
   }
 
   .big-body-text {
+    font-size: 28.125px;
+  }
+  .nav-header {
     font-size: 37.5px;
   }
 
@@ -219,10 +220,14 @@ body {
   }
 
   .big-ovo-header {
-    font-size: 35px;
+    font-size: 26.25px;
   }
 
   .big-body-text {
+    font-size: 18.75px;
+  }
+
+  .nav-header {
     font-size: 25px;
   }
 
