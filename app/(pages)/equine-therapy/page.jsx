@@ -28,7 +28,7 @@ export default function counseling() {
             </section>
 
             <div className={styles.backgroundWrapper}>
-                <section className={`${styles.servicesContainer}`}>
+                <section className={`${styles.servicesContainer} ${styles.transBg}`}>
                     <h2 id='services-and-fees' className={`big-ovo-header text-center text-med-brown ${styles.title}`} >Services & Fees</h2>
 
                     <div className={`${styles.servicesRow}`}>
@@ -79,62 +79,62 @@ export default function counseling() {
             {/* //! FAQ Section */}
             <section id='FAQ' className={`${styles.backgroundWrapper}`}>
                 {/* Place FAQ Component Below */}
-
-                <FAQ
-                    faqList={
-                        [
-                            {
-                                id: 1,
-                                question: "What is Equine Therapy?",
-                                answer:
-                                    "Equine Therapy is a type of mental health therapy that utilizes horses to promote and engage one’s whole body within the healing process. Horses are authentic creatures who will attune to the client and always respond honestly to them.",
-                            },
-                            {
-                                id: 2,
-                                question: "Do I need to know how to ride a horse?",
-                                answer:
-                                    "No, you do not need to have any experience with horses to participate in Equine Therapy.",
-                            },
-                            {
-                                id: 3,
-                                question: "How is it different than therapy in an office?",
-                                answer:
-                                    "Equine Therapy is different from therapy in an office as there is a unique experiential component that can be difficult to duplicate in an office setting. This experiential component aids the client in engaging with themselves in a more natural way through the companionship of a horse.",
-                            },
-                            {
-                                id: 4,
-                                question: "What do you do in Equine Therapy?",
-                                answer:
-                                    "Each session is tailored to the specific needs of the client. Some things you may do are walk, groom, and spend quality time with the horse and Therapist.",
-                            },
-                            {
-                                id: 5,
-                                question: "Do I have to pay more for Equine Therapy?",
-                                answer:
-                                    "No, the price for Equine Therapy is similar to the price of a therapy session in an office. This is subject to change in the future.",
-                            },
-                            {
-                                id: 6,
-                                question: "What should I wear?",
-                                answer:
-                                    "It is recommended to wear close toed shoes and clothing you are comfortable in.",
-                            },
-                            {
-                                id: 7,
-                                question: "Can I bring treats for the horses?",
-                                answer:
-                                    "No, please do not bring treats for the horses. At times, I will supply treats that are safe for the horses to eat. ",
-                            },
-                            {
-                                id: 8,
-                                question: "What is confidentiality like on a farm?",
-                                answer:
-                                    "Your confidentiality is of the upmost importance. We do have precautions and protocols in place to ensure a quiet and protected therapy session. Since the farm is an open area, your confidentiality cannot be guaranteed as you may be viewed from the road or surrounding areas.",
-                            },
-                        ]
-                    }
-                />
-
+                <div className={styles.transBg}>
+                    <FAQ
+                        faqList={
+                            [
+                                {
+                                    id: 1,
+                                    question: "What is Equine Therapy?",
+                                    answer:
+                                        "Equine Therapy is a type of mental health therapy that utilizes horses to promote and engage one’s whole body within the healing process. Horses are authentic creatures who will attune to the client and always respond honestly to them.",
+                                },
+                                {
+                                    id: 2,
+                                    question: "Do I need to know how to ride a horse?",
+                                    answer:
+                                        "No, you do not need to have any experience with horses to participate in Equine Therapy.",
+                                },
+                                {
+                                    id: 3,
+                                    question: "How is it different than therapy in an office?",
+                                    answer:
+                                        "Equine Therapy is different from therapy in an office as there is a unique experiential component that can be difficult to duplicate in an office setting. This experiential component aids the client in engaging with themselves in a more natural way through the companionship of a horse.",
+                                },
+                                {
+                                    id: 4,
+                                    question: "What do you do in Equine Therapy?",
+                                    answer:
+                                        "Each session is tailored to the specific needs of the client. Some things you may do are walk, groom, and spend quality time with the horse and Therapist.",
+                                },
+                                {
+                                    id: 5,
+                                    question: "Do I have to pay more for Equine Therapy?",
+                                    answer:
+                                        "No, the price for Equine Therapy is similar to the price of a therapy session in an office. This is subject to change in the future.",
+                                },
+                                {
+                                    id: 6,
+                                    question: "What should I wear?",
+                                    answer:
+                                        "It is recommended to wear close toed shoes and clothing you are comfortable in.",
+                                },
+                                {
+                                    id: 7,
+                                    question: "Can I bring treats for the horses?",
+                                    answer:
+                                        "No, please do not bring treats for the horses. At times, I will supply treats that are safe for the horses to eat. ",
+                                },
+                                {
+                                    id: 8,
+                                    question: "What is confidentiality like on a farm?",
+                                    answer:
+                                        "Your confidentiality is of the upmost importance. We do have precautions and protocols in place to ensure a quiet and protected therapy session. Since the farm is an open area, your confidentiality cannot be guaranteed as you may be viewed from the road or surrounding areas.",
+                                },
+                            ]
+                        }
+                    />
+                </div>
             </section>
         </main>
     )
