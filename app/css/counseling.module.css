@@ -142,3 +142,18 @@
         padding-right: 1%;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .philosophyColumn {
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 100%;
+        text-align: center;
+    }
+    .goodFaithText {
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 100%;
+        text-align: center;
+    }
+}
