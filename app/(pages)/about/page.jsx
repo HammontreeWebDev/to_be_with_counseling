@@ -19,16 +19,8 @@ export default function about() {
                 </div>
             </section>
 
-            <section className={`${styles.aboutContainer}`}>
-                {/* //! Background */}
-                <Image
-                    src={'/img/contentBackground.svg'}
-                    width={1720}
-                    height={1470}
-                    alt="background texture"
-                    className={`${styles.backgroundTexture}`}
-                />
-
+            <section className={`${styles.aboutContainer} ${styles.backgroundWrapper}`}>
+        
                 {/* //!Title Row */}
                 <div className={`${styles.titleRow}`}>
                     <h1 className={`script-titles`}>Freedom</h1>

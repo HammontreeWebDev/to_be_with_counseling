@@ -95,8 +95,8 @@
 
 .backgroundWrapper {
     background: url('/img/servicesBackground.svg');
-    background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .goodFaithContainer {

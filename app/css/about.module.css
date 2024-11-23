@@ -32,11 +32,10 @@
     gap: 10px;
 }
 
-.backgroundTexture {
-    position: absolute;
-    width: 89.58vw;
-    height: 136.11vh;
-    z-index: -1;
+.backgroundWrapper {
+    background: url('/img/servicesBackground.svg');
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .aboutRow {
