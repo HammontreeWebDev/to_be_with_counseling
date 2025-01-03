@@ -61,7 +61,10 @@ export default function CommonNavBar() {
     };
 
     return (
-        <header className={styles.headerContainer}>
+        <header className={styles.headerContainer}
+        // onClick={() => {hideCounselingDropdown(); hideEquineTherapyDropdown()}}
+        onMouseLeave={() => {hideCounselingDropdown(); hideEquineTherapyDropdown()}}
+        >
 
             <div className={`${styles.commonTitleContainer}`}>
 
@@ -80,13 +83,15 @@ export default function CommonNavBar() {
             </div>
 
             <nav className={`${styles.navBar} normal-ovo-header`}>
-                <Link className={`${styles.mainLink} text-white`} href='/about'>About</Link>
+                <Link className={`${styles.mainLink} text-white`} 
+                href='/about'
+                onMouseEnter={() => {hideEquineTherapyDropdown(); hideCounselingDropdown()}}
+                >About</Link>
 
                 {/* Counseling Dropdown Trigger and Area */}
                 <div
                     className={styles.dropdownWrapper}
-                    onMouseEnter={showCounselingDropdown}
-                    onMouseLeave={hideCounselingDropdown}
+                    onMouseEnter={() => {hideEquineTherapyDropdown(); showCounselingDropdown()}}
                 >
                     <p className={`${styles.fakeLink} text-white`}
                         onClick={showCounselingDropdown}
@@ -96,7 +101,6 @@ export default function CommonNavBar() {
                         <ul
                             className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
                             onMouseEnter={showCounselingDropdown}
-                            onMouseLeave={hideCounselingDropdown}
                         >
                             <li className={styles.linkStyle}>
                                 <Link href='/counseling'
@@ -146,8 +150,7 @@ export default function CommonNavBar() {
                 {/* Equine Therapy Dropdown Trigger and Area */}
                 <div
                     className={styles.dropdownWrapper}
-                    onMouseEnter={showEquineTherapyDropdown}
-                    onMouseLeave={hideEquineTherapyDropdown}
+                    onMouseEnter={() => {hideCounselingDropdown(); showEquineTherapyDropdown()}}
                 >
                     <p className={`${styles.fakeLink} text-white`}
                         onClick={showEquineTherapyDropdown}
@@ -157,7 +160,6 @@ export default function CommonNavBar() {
                         <ul
                             className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
                             onMouseEnter={showEquineTherapyDropdown}
-                            onMouseLeave={hideEquineTherapyDropdown}
                         >
                             <li className={styles.linkStyle}>
                                 <Link href='/equine-therapy'
@@ -204,7 +206,10 @@ export default function CommonNavBar() {
                     )}
                 </div>
              
-                <Link className={`${styles.mainLink} text-white`} href='/contact'>Contact</Link>
+                <Link className={`${styles.mainLink} text-white`} 
+                href='/contact'
+                onMouseEnter={() => {hideEquineTherapyDropdown(); hideCounselingDropdown()}}
+                >Contact</Link>
             </nav>
         </header>
     )

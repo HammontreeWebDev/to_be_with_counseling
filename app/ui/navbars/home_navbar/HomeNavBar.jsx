@@ -1,80 +1,123 @@
 'use client'
 import Link from "next/link";
 import styles from "../../../css/navBar.module.css";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function HomeNavBar() {
+    {/* <h1 className={`${styles.headerTitle} big-script-header text-sage-green`}> Karah Hammontree </h1> */ }
 
-    const [toggleDropdownContact, setToggleDropdownContact] = useState(false);
-    const [toggleDropdownEquine, setToggleDropdownEquine] = useState(false);
+    // State to track screen size
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    const dropdownToggleContact = () => {
-        setToggleDropdownContact(!toggleDropdownContact);
+    // Detect screen size
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 1024);
+        };
+
+        // Initialize on mount
+        handleResize();
+
+        // Listen for resize events
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    // Counseling Dropdown Logic
+    const [isCounselingDropdownVisible, setIsCounselingDropdownVisible] = useState(false);
+    const counselingDropdownTimeout = useRef(null);
+
+    const showCounselingDropdown = () => {
+        // Clear any timeout to hide the dropdown
+        clearTimeout(counselingDropdownTimeout.current);
+        setIsCounselingDropdownVisible(true);
     };
 
-    const dropdownToggleEquine = () => {
-        setToggleDropdownEquine(!toggleDropdownEquine);
+    const hideCounselingDropdown = () => {
+        // Add a slight delay before hiding the dropdown
+        counselingDropdownTimeout.current = setTimeout(() => {
+            setIsCounselingDropdownVisible(false);
+        }, 200); // Adjust delay as needed
+    };
+
+    // Equine Therapy Dropdown Logic
+    const [isEquineTherapyDropdownVisible, setIsEquineTherapyDropdownVisible] = useState(false);
+    const equineTherapyDropdownTimeout = useRef(null);
+
+    const showEquineTherapyDropdown = () => {
+        // Clear any timeout to hide the dropdown
+        clearTimeout(equineTherapyDropdownTimeout.current);
+        setIsEquineTherapyDropdownVisible(true);
+    };
+
+    const hideEquineTherapyDropdown = () => {
+        // Add a slight delay before hiding the dropdown
+        equineTherapyDropdownTimeout.current = setTimeout(() => {
+            setIsEquineTherapyDropdownVisible(false);
+        }, 200); // Adjust delay as needed
     };
 
     return (
-        <header className={styles.headerContainer}>
+        <header className={styles.headerContainer}
+            // onClick={() => {hideCounselingDropdown(); hideEquineTherapyDropdown()}}
+            onMouseLeave={() => { hideCounselingDropdown(); hideEquineTherapyDropdown() }}
+        >
             <h1 className={`${styles.headerTitle} big-script-header text-sage-green`}> Karah Hammontree </h1>
             <nav className={`${styles.navBar} normal-ovo-header`}>
-                <Link className={`${styles.mainLink} text-white`} href='/about'>About</Link>
+                <Link className={`${styles.mainLink} text-white`}
+                    href='/about'
+                    onMouseEnter={() => { hideEquineTherapyDropdown(); hideCounselingDropdown() }}
+                >About</Link>
 
-                <p
-                    className={`${styles.fakeLink} text-white`}
+                {/* Counseling Dropdown Trigger and Area */}
+                <div
+                    className={styles.dropdownWrapper}
+                    onMouseEnter={() => { hideEquineTherapyDropdown(); showCounselingDropdown() }}
+                // onMouseLeave={hideCounselingDropdown}
                 >
-                    Counseling
-                    <span
-                        className={styles.arrowSpan}
-                        onClick={dropdownToggleContact}
-                    >
-                        <Image
-                            src='/img/downArrow.svg'
-                            height={35}
-                            width={35}
-                            alt="down arrow"
-                        />
-                    </span>
-                    {
-                        toggleDropdownContact ?
-                            <ul
-                                className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
-                            >
+                    <p className={`${styles.fakeLink} text-white`}
+                        onClick={showCounselingDropdown}
+                    >Counseling</p>
 
-                                <li className={styles.linkStyle}>
-                                    <Link href='/counseling' onClick={dropdownToggleContact}>
-                                        Counseling
-                                    </Link>
-                                </li>
+                    {isCounselingDropdownVisible && (
+                        <ul
+                            className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
+                            onMouseEnter={showCounselingDropdown}
+                        // onMouseLeave={hideCounselingDropdown}
+                        >
+                            <li className={styles.linkStyle}>
+                                <Link href='/counseling'
+                                    onClick={hideCounselingDropdown}
+                                >Counseling</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/counseling/#philosophy'
+                                    onClick={hideCounselingDropdown}
+                                >Philosophy</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/counseling/#services-and-fees'
+                                    onClick={hideCounselingDropdown}
+                                >Services & Fees</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/counseling/#good-faith-estimate'
+                                    onClick={hideCounselingDropdown}
+                                >Good Faith Estimate</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/counseling/#resources'
+                                    onClick={hideCounselingDropdown}
+                                >Resources</Link>
+                            </li>
 
-                                <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#philosophy' onClick={dropdownToggleContact}>
-                                        Philosophy
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#services-and-fees' onClick={dropdownToggleContact}>
-                                        Services & Fees
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#good-faith-estimate' onClick={dropdownToggleContact}>
-                                        Good Faith Estimate
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle}>
-                                    <Link href='/counseling/#resources' onClick={dropdownToggleContact}>
-                                        Resources
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle} onClick={dropdownToggleContact}>
+                            {/* Conditional "Close" Button */}
+                            {isSmallScreen && (
+                                <li className={styles.linkStyle} onClick={hideCounselingDropdown}>
                                     <div className="flex justify-center items-center">
                                         <Image
                                             height={25}
@@ -85,63 +128,55 @@ export default function HomeNavBar() {
                                         <p className="copyright">&nbsp;close</p>
                                     </div>
                                 </li>
+                            )}
 
-                            </ul> : null
-                    }
+                        </ul>
+                    )}
+                </div>
 
-                </p>
-
-                <p
-                    className={`${styles.fakeLink} text-white`}
+                {/* Equine Therapy Dropdown Trigger and Area */}
+                <div
+                    className={styles.dropdownWrapper}
+                    onMouseEnter={() => { hideCounselingDropdown(); showEquineTherapyDropdown() }}
                 >
-                    Equine Therapy
-                    <span
-                        className={styles.arrowSpan}
-                        onClick={dropdownToggleEquine}
-                    >
-                        <Image
-                            src='/img/downArrow.svg'
-                            height={35}
-                            width={35}
-                            alt="down arrow"
-                        />
-                    </span>
-                    {
-                        toggleDropdownEquine ?
-                            <ul
-                                className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
-                            >
+                    <p className={`${styles.fakeLink} text-white`}
+                        onClick={showEquineTherapyDropdown}
+                    >Equine Therapy</p>
 
-                                <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy' onClick={dropdownToggleEquine}>
-                                        Equine Therapy
-                                    </Link>
-                                </li>
+                    {isEquineTherapyDropdownVisible && (
+                        <ul
+                            className={`${styles.toggleDropdown} sub-ovo-header animate__animated animate__fadeInDown`}
+                            onMouseEnter={showEquineTherapyDropdown}
+                        >
+                            <li className={styles.linkStyle}>
+                                <Link href='/equine-therapy'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Equine Therapy</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/equine-therapy/#philosophy'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Philosophy</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/equine-therapy/#services-and-fees'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Services & Fees</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/equine-therapy/#good-faith-estimate'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Good Faith Estimate</Link>
+                            </li>
+                            <li className={styles.linkStyle}>
+                                <Link href='/equine-therapy/#FAQ'
+                                    onClick={hideEquineTherapyDropdown}
+                                >FAQ</Link>
+                            </li>
 
-                                <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy/#philosophy' onClick={dropdownToggleEquine}>
-                                        Philosophy
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy/#services-and-fees' onClick={dropdownToggleEquine}>
-                                        Services & Fees
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy/#good-faith-estimate' onClick={dropdownToggleEquine}>
-                                        Good Faith Estimate
-                                    </Link>
-                                </li>
-
-                                <li className={styles.linkStyle}>
-                                    <Link href='/equine-therapy/#FAQ' onClick={dropdownToggleEquine}>
-                                        FAQ
-                                    </Link>
-                                </li>
-                                <li className={styles.linkStyle} onClick={dropdownToggleEquine}>
+                            {/* Conditional "Close" Button */}
+                            {isSmallScreen && (
+                                <li className={styles.linkStyle} onClick={hideEquineTherapyDropdown}>
                                     <div className="flex justify-center items-center">
                                         <Image
                                             height={25}
@@ -152,13 +187,16 @@ export default function HomeNavBar() {
                                         <p className="copyright">&nbsp;close</p>
                                     </div>
                                 </li>
+                            )}
 
-                            </ul> : null
-                    }
+                        </ul>
+                    )}
+                </div>
 
-                </p>
-
-                <Link className={`${styles.mainLink} text-white`} href='/contact'>Contact</Link>
+                <Link className={`${styles.mainLink} text-white`}
+                    href='/contact'
+                    onMouseEnter={() => { hideEquineTherapyDropdown(); hideCounselingDropdown() }}
+                >Contact</Link>
             </nav>
         </header>
     )
