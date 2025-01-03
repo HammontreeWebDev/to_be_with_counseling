@@ -1,10 +1,30 @@
 'use client'
 import Link from "next/link";
 import styles from "../../../css/navBar.module.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 
 export default function CommonNavBar() {
+
+    // State to track screen size
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    // Detect screen size
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 1024);
+        };
+
+        // Initialize on mount
+        handleResize();
+
+        // Listen for resize events
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     // Counseling Dropdown Logic
     const [isCounselingDropdownVisible, setIsCounselingDropdownVisible] = useState(false);
@@ -103,6 +123,22 @@ export default function CommonNavBar() {
                                     onClick={hideCounselingDropdown}
                                 >Resources</Link>
                             </li>
+
+                            {/* Conditional "Close" Button */}
+                            {isSmallScreen && (
+                                <li className={styles.linkStyle} onClick={hideCounselingDropdown}>
+                                    <div className="flex justify-center items-center">
+                                        <Image
+                                            height={25}
+                                            width={25}
+                                            src={'/img/closeButton.svg'}
+                                            alt="close icon"
+                                        />
+                                        <p className="copyright">&nbsp;close</p>
+                                    </div>
+                                </li>
+                            )}
+
                         </ul>
                     )}
                 </div>
@@ -148,10 +184,10 @@ export default function CommonNavBar() {
                                     onClick={hideEquineTherapyDropdown}
                                 >FAQ</Link>
                             </li>
-                        </ul>
-                    )}
-                </div>
-                {/* <li className={styles.linkStyle} onClick={dropdownToggleEquine}>
+
+                            {/* Conditional "Close" Button */}
+                            {isSmallScreen && (
+                                <li className={styles.linkStyle} onClick={hideEquineTherapyDropdown}>
                                     <div className="flex justify-center items-center">
                                         <Image
                                             height={25}
@@ -161,10 +197,13 @@ export default function CommonNavBar() {
                                         />
                                         <p className="copyright">&nbsp;close</p>
                                     </div>
-                                </li> */}
+                                </li>
+                            )}
 
-
-
+                        </ul>
+                    )}
+                </div>
+             
                 <Link className={`${styles.mainLink} text-white`} href='/contact'>Contact</Link>
             </nav>
         </header>
