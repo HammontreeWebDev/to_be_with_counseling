@@ -73,7 +73,13 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1461px) {
+    .navBar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .headerContainer {
         flex-direction: column;
         width: 100%;
