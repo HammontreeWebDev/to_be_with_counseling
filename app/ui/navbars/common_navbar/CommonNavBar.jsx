@@ -68,7 +68,9 @@ export default function CommonNavBar() {
                     onMouseEnter={showCounselingDropdown}
                     onMouseLeave={hideCounselingDropdown}
                 >
-                    <p className={`${styles.fakeLink} text-white`}>Counseling</p>
+                    <p className={`${styles.fakeLink} text-white`}
+                        onClick={showCounselingDropdown}
+                    >Counseling</p>
 
                     {isCounselingDropdownVisible && (
                         <ul
@@ -77,19 +79,29 @@ export default function CommonNavBar() {
                             onMouseLeave={hideCounselingDropdown}
                         >
                             <li className={styles.linkStyle}>
-                                <Link href='/counseling'>Counseling</Link>
+                                <Link href='/counseling'
+                                    onClick={hideCounselingDropdown}
+                                >Counseling</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/counseling/#philosophy'>Philosophy</Link>
+                                <Link href='/counseling/#philosophy'
+                                    onClick={hideCounselingDropdown}
+                                >Philosophy</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/counseling/#services-and-fees'>Services & Fees</Link>
+                                <Link href='/counseling/#services-and-fees'
+                                    onClick={hideCounselingDropdown}
+                                >Services & Fees</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/counseling/#good-faith-estimate'>Good Faith Estimate</Link>
+                                <Link href='/counseling/#good-faith-estimate'
+                                    onClick={hideCounselingDropdown}
+                                >Good Faith Estimate</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/counseling/#resources'>Resources</Link>
+                                <Link href='/counseling/#resources'
+                                    onClick={hideCounselingDropdown}
+                                >Resources</Link>
                             </li>
                         </ul>
                     )}
@@ -101,7 +113,9 @@ export default function CommonNavBar() {
                     onMouseEnter={showEquineTherapyDropdown}
                     onMouseLeave={hideEquineTherapyDropdown}
                 >
-                    <p className={`${styles.fakeLink} text-white`}>Equine Therapy</p>
+                    <p className={`${styles.fakeLink} text-white`}
+                        onClick={showEquineTherapyDropdown}
+                    >Equine Therapy</p>
 
                     {isEquineTherapyDropdownVisible && (
                         <ul
@@ -110,19 +124,29 @@ export default function CommonNavBar() {
                             onMouseLeave={hideEquineTherapyDropdown}
                         >
                             <li className={styles.linkStyle}>
-                                <Link href='/equine-therapy'>Equine Therapy</Link>
+                                <Link href='/equine-therapy'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Equine Therapy</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/equine-therapy/#philosophy'>Philosophy</Link>
+                                <Link href='/equine-therapy/#philosophy'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Philosophy</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/equine-therapy/#services-and-fees'>Services & Fees</Link>
+                                <Link href='/equine-therapy/#services-and-fees'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Services & Fees</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/equine-therapy/#good-faith-estimate'>Good Faith Estimate</Link>
+                                <Link href='/equine-therapy/#good-faith-estimate'
+                                    onClick={hideEquineTherapyDropdown}
+                                >Good Faith Estimate</Link>
                             </li>
                             <li className={styles.linkStyle}>
-                                <Link href='/equine-therapy/#FAQ'>FAQ</Link>
+                                <Link href='/equine-therapy/#FAQ'
+                                    onClick={hideEquineTherapyDropdown}
+                                >FAQ</Link>
                             </li>
                         </ul>
                     )}
