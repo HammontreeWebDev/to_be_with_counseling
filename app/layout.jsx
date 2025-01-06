@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${bdScript.variable} ${ovoFont.variable} antialiased`}
+        className={`${bdScript.variable} ${ovoFont.variable} antialiased noOverflow`}
       >
         {children}
         <Footer />

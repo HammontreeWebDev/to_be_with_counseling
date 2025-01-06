@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FAQ from '@/app/ui/common/FAQ';
 
-export default function counseling() {
+export default function equineTherapy() {
     return (
         <main>
             <section className={`${styles.titleContainer}`}>
-                <h1 className={`${styles.titleSlogan} script-titles text-center`}>
+                <h1 className={`${styles.titleSlogan} adjusted-script-titles text-center`}>
                     Horses are non-judgmental and unbiased creatures that provide feedback, reflect emotional states, and inspire metaphors that encourage one on the road toward evident transformation and lasting change.
                 </h1>
             </section>
@@ -33,10 +33,11 @@ export default function counseling() {
 
                     <div className={`${styles.servicesRow}`}>
                         <Image
-                            src={'/img/services.png'}
+                            src={'/img/equine-services.png'}
                             height={1040}
                             width={880}
-                            alt='women in chairs'
+                            layout="responsive"
+                            alt='woman hugging a horse'
                         />
 
                         <div className={`${styles.servicesColumn}`}>

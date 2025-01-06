@@ -36,6 +36,7 @@ export default function counseling() {
                             src={'/img/services.png'}
                             height={1040}
                             width={880}
+                            layout="responsive"
                             alt='women in chairs'
                         />
 
