@@ -75,7 +75,7 @@ export default function CommonNavBar() {
                     alt="To be with counseling logo"
                 />
                 <Link className={`nav-header text-sage-green ${styles.textContainer}`} href={'/'}>
-                    <p> To Be With </p>
+                    <p className={styles.toBeWith}> To Be With </p>
                     <p className={`big-script-header`}>
                         &nbsp;Counseling
                     </p>

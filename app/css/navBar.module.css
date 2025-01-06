@@ -81,6 +81,10 @@
         width: 62%;
         font-size: 80px;
     }
+
+    .toBeWith {
+        margin-bottom: -40px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -123,6 +127,9 @@
     .linkStyle {
         display: flex;
         justify-content: center;
+    }
+    .toBeWith {
+        margin-bottom: initial;
     }
 }
 
