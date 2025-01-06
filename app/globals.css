@@ -67,6 +67,12 @@
   color: var(--forest-green);
 }
 
+.adjusted-script-titles{
+  font-family: var(--bd-script);
+  font-size: 100px;
+  color: var(--forest-green);
+}
+
 .normal-ovo-header {
   font-family: var(--ovo-font);
   font-size: 28px;
@@ -217,6 +223,10 @@ body {
   .script-titles {
     font-size: 75px;
     /* Further reduce script title font size */
+  }
+
+  .adjusted-script-titles {
+    font-size: 75px;
   }
 
   .normal-ovo-header {
