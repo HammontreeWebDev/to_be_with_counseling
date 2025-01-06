@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    max-width: 100vw;
+    height: 60vh;
     background-image: url('/img/contact-title.png');
     background-size: cover;
     background-position: center;
@@ -56,10 +57,14 @@
 /* TODO: find out why some mobile devices show gap on right */
 
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 1024px) {
     .titleSlogan, .contactContainer, .contactColumn {
         padding-left: 1%;
         padding-right: 1%;
+    }
+
+    .titleContainer{
+        height: 100vh;
     }
 }
 

@@ -32,7 +32,7 @@ export default function contact() {
     return (
         <main>
             <section className={`${styles.titleContainer}`}>
-                <h1 className={`${styles.titleSlogan} script-titles text-center`}>
+                <h1 className={`${styles.titleSlogan} adjusted-script-titles text-center`}>
                     Because you are worth it and deserve to live a life of freedom
                 </h1>
             </section>
