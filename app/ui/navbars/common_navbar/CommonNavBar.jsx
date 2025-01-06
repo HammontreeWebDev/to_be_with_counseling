@@ -62,36 +62,37 @@ export default function CommonNavBar() {
 
     return (
         <header className={styles.headerContainer}
-        // onClick={() => {hideCounselingDropdown(); hideEquineTherapyDropdown()}}
-        onMouseLeave={() => {hideCounselingDropdown(); hideEquineTherapyDropdown()}}
+            // onClick={() => {hideCounselingDropdown(); hideEquineTherapyDropdown()}}
+            onMouseLeave={() => { hideCounselingDropdown(); hideEquineTherapyDropdown() }}
         >
 
-            <div className={`${styles.commonTitleContainer}`}>
+            <div className={`${styles.commonTitleContainer} ${styles.mobileTitleContainer}`}>
 
                 <Image
+                    className={styles.mobileImage}
                     src='/img/commonNavLogo.png'
                     height={138}
                     width={138}
                     alt="To be with counseling logo"
                 />
                 <Link className={`nav-header text-sage-green ${styles.textContainer}`} href={'/'}>
-                    <p className={styles.toBeWith}> To Be With </p>
-                    <p className={`big-script-header`}>
+                    <p className={`${styles.toBeWith} ${styles.mobileTo}`}> To Be With </p>
+                    <p className={`big-script-header ${styles.mobileCounseling}`}>
                         &nbsp;Counseling
                     </p>
                 </Link>
             </div>
 
             <nav className={`${styles.navBar} normal-ovo-header`}>
-                <Link className={`${styles.mainLink} text-white`} 
-                href='/about'
-                onMouseEnter={() => {hideEquineTherapyDropdown(); hideCounselingDropdown()}}
+                <Link className={`${styles.mainLink} text-white`}
+                    href='/about'
+                    onMouseEnter={() => { hideEquineTherapyDropdown(); hideCounselingDropdown() }}
                 >About</Link>
 
                 {/* Counseling Dropdown Trigger and Area */}
                 <div
                     className={styles.dropdownWrapper}
-                    onMouseEnter={() => {hideEquineTherapyDropdown(); showCounselingDropdown()}}
+                    onMouseEnter={() => { hideEquineTherapyDropdown(); showCounselingDropdown() }}
                 >
                     <p className={`${styles.fakeLink} text-white`}
                         onClick={showCounselingDropdown}
@@ -150,7 +151,7 @@ export default function CommonNavBar() {
                 {/* Equine Therapy Dropdown Trigger and Area */}
                 <div
                     className={styles.dropdownWrapper}
-                    onMouseEnter={() => {hideCounselingDropdown(); showEquineTherapyDropdown()}}
+                    onMouseEnter={() => { hideCounselingDropdown(); showEquineTherapyDropdown() }}
                 >
                     <p className={`${styles.fakeLink} text-white`}
                         onClick={showEquineTherapyDropdown}
@@ -205,10 +206,10 @@ export default function CommonNavBar() {
                         </ul>
                     )}
                 </div>
-             
-                <Link className={`${styles.mainLink} text-white`} 
-                href='/contact'
-                onMouseEnter={() => {hideEquineTherapyDropdown(); hideCounselingDropdown()}}
+
+                <Link className={`${styles.mainLink} text-white`}
+                    href='/contact'
+                    onMouseEnter={() => { hideEquineTherapyDropdown(); hideCounselingDropdown() }}
                 >Contact</Link>
             </nav>
         </header>

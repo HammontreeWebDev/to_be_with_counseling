@@ -21,7 +21,7 @@
     color: var(--white);
     align-items: center;
     justify-content: space-around;
-    width:55%;
+    width: 55%;
 }
 
 .textContainer {
@@ -88,13 +88,31 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .headerTitle{
+
+    .headerTitle,
+    .mobileTitleContainer {
         padding-left: 0px;
         width: 100%;
         text-align: center;
         background-color: var(--teal);
         color: var(--white);
     }
+
+    .mobileTo {
+        color: white;
+    }
+
+    .mobileCounseling {
+        color: white;
+    }
+
+    .mobileImage {
+        height: 10%;
+        width: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
     .headerContainer {
         flex-direction: column;
         width: 100%;
@@ -124,10 +142,12 @@
         width: 100vw;
         height: 100vh;
     }
+
     .linkStyle {
         display: flex;
         justify-content: center;
     }
+
     .toBeWith {
         margin-bottom: initial;
     }

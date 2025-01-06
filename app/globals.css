@@ -218,6 +218,12 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 660px){
+  .script-titles {
+    font-size: 100px;
+    /* Further reduce script title font size */
+  }
+}
 
 @media screen and (max-width: 590px) {
   .big-script-header {
@@ -268,9 +274,16 @@
   }
 }
 
+@media screen and (max-width: 440px){
+  .script-titles {
+    font-size: 65px;
+    /* Further reduce script title font size */
+  }
+}
+
 @media screen and (max-width: 416px) {
 
-  .adjusted-script-titles {
+  .adjusted-script-titles, .script-titles {
     font-size: 50px;
   }
   
