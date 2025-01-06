@@ -14,13 +14,13 @@ export default function Resources({ productList, title }) {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 
         <div className="flex flex-col justify-center items-center bg-[var(--trans-teal)] rounded-2xl">
-          <h2 className="mx-auto max-w-2xl lg:max-w-7xl big-body-text text-[var(--forest-green)]">
+          <h2 className="mx-auto px-1 py-1 max-w-2xl lg:max-w-7xl big-body-text text-[var(--forest-green)]">
             {title}
           </h2>
 
           {
             isOpen ?
-              <button className="flex items-center body-text text-[var(--forest-green)] mb-3 px-1 py-1 rounded hover:animate-pulse" onClick={handleOpen}>
+              <button className="flex items-center body-text text-[var(--forest-green)] px-1 py-1 rounded hover:animate-pulse" onClick={handleOpen}>
                 Close
                 <Image
                   src='/img/Close.svg'
@@ -30,7 +30,7 @@ export default function Resources({ productList, title }) {
                 />
               </button>
               :
-              <button className="flex items-center body-text text-[var(--forest-green)] mb-3 px-1 py-1 rounded hover:animate-pulse" onClick={handleOpen}>
+              <button className="flex items-center body-text text-[var(--forest-green)] px-1 py-1 rounded hover:animate-pulse" onClick={handleOpen}>
                 View
                 <Image
                   src='/img/expand.svg'
