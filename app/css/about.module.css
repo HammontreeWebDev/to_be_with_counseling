@@ -104,15 +104,24 @@
 
 .contentColumn {
     display: flex;
-    width: 91.66vw;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 9.25vh;
     padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
 }
 
 @media screen and (max-width: 1660px) {
+    .aboutRow, .aboutColumn, .contentRow {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .titleRow {
         flex-direction: column;
         min-height: none;
@@ -127,17 +136,8 @@
         margin-top: none;
     }
 
-    .aboutRow, .aboutColumn, .titleRow, .contentRow {
+    .aboutRow, .aboutColumn, .contentRow {
         padding-left: 1%;
         padding-right: 1%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .contentColumn {
-        padding-left: 2%;
-        padding-right: 2%;
-        width: 100%;
-        text-align: center;
     }
 }

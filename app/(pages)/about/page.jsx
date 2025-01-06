@@ -50,16 +50,13 @@ export default function about() {
                     <div className={`${styles.contentRow}`}>
                         <Image
                             src={'/img/about-avatar.png'}
-                            height={720}
-                            width={720}
+                            height={500}
+                            width={500}
                             alt="Karah Hammontree"
                         />
                         <div className={styles.miniColumn}>
-                            <h2 className={`big-ovo-header text-forest-green text-center`}>
+                            <h2 className={`nav-header text-forest-green text-center`}>
                                 Karah Hammontree
-                            </h2>
-                            <h2 className={`big-ovo-header text-forest-green text-center`}>
-                                MA, RMHCI
                             </h2>
                         </div>
                     </div>
@@ -68,7 +65,7 @@ export default function about() {
 
                     <div className={`${styles.contentColumn}`}>
                         <p className={`big-body-text text-forest-green`}>
-                            Karah is a Registered Mental Health Counselor Intern in the State of Florida who is passionate about walking alongside her clients in their search for long-lasting freedom from eating disorders, body image issues, and body shame. In assisting her clients uncover the root issues that have contributed to the development of an unhealthy relationship with food and body, she has witnessed the unequivocal transformation that occurs when one is able to come back home to themselves, utilizing compassion, kindness, and curiosity, in this needed restoration process.
+                        Karah Hammontree MA, RMHCI is a Registered Mental Health Counselor Intern in the State of Florida who is passionate about walking alongside her clients in their search for long-lasting freedom from eating disorders, body image issues, and body shame. In assisting her clients uncover the root issues that have contributed to the development of an unhealthy relationship with food and body, she has witnessed the unequivocal transformation that occurs when one is able to come back home to themselves, utilizing compassion, kindness, and curiosity, in this needed restoration process.
                         </p>
 
                         <p className={`big-body-text text-forest-green`}>

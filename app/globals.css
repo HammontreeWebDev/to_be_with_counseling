@@ -159,6 +159,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1461px) {
+  .script-titles {
+    font-size: 115px;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
 
