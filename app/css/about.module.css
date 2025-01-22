@@ -129,9 +129,11 @@
 
 @media screen and (max-width: 1024px) {
     .titleRow {
-        flex-direction: column;
-        min-height: none;
         width: 100%;
+    }
+
+    .mobileTitle {
+        font-size: 80px;
     }
 
     .bulletContainer {
@@ -140,10 +142,43 @@
 
     .bullet {
         margin-top: none;
+        width: 15px;
+    }
+
+    .contentRow {
+        flex-direction: column-reverse;
     }
 
     .aboutRow, .aboutColumn, .contentRow {
         padding-left: 1%;
         padding-right: 1%;
+    }
+}
+
+@media screen and (max-width: 796px) { 
+    .mobileTitle {
+        font-size: 70px;
+    }
+    .bullet {
+        margin-top: 13vh;
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 657px) { 
+    .mobileTitle {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 440px) { 
+    .mobileTitle {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 355px) { 
+    .mobileTitle {
+        font-size: 30px;
     }
 }

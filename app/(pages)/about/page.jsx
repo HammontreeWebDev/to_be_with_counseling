@@ -23,7 +23,7 @@ export default function about() {
                 <div className={`${styles.transBg}`}>
                     {/* //!Title Row */}
                     <div className={`${styles.titleRow}`}>
-                        <h1 className={`script-titles`}>Freedom</h1>
+                        <h1 className={`script-titles ${styles.mobileTitle}`}>Freedom</h1>
                         <div className={`${styles.bulletContainer}`}>
                             <Image
                                 className={`${styles.bullet}`}
@@ -33,7 +33,7 @@ export default function about() {
                                 alt="diamond"
                             />
                         </div>
-                        <h1 className={`script-titles`}>Transformation</h1>
+                        <h1 className={`script-titles ${styles.mobileTitle}`}>Transformation</h1>
                         <div className={`${styles.bulletContainer}`}>
                             <Image
                                 className={`${styles.bullet}`}
@@ -43,7 +43,7 @@ export default function about() {
                                 alt="diamond"
                             />
                         </div>
-                        <h1 className={`script-titles`}>Healing</h1>
+                        <h1 className={`script-titles ${styles.mobileTitle}`}>Healing</h1>
                     </div>
 
                     {/* //!Content Row */}
