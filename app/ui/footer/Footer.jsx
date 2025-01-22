@@ -114,7 +114,7 @@ export default function Footer() {
                 {/* Row Two */}
                 <div className={`${styles.footerRow}`}>
                     <div className={`${styles.footerColumn}`}>
-                        <p className={`copyright text-white`}>Copyright © 2024. To Be With Counseling LLC</p>
+                        <p className={`copyright text-white`}>Copyright © 2024 - {new Date().getFullYear()}. To Be With Counseling LLC</p>
                         <p className={`disclaimer text-white`}>Website Built By: <span>
                             <Link className={`text-light-brown ${styles.disclaimerHover}`} href='https://www.kailebhammontree.com/' target="_blank" rel="noopener noreferrer">
                                 Hammontree Full-Stack Solutions LLC
