@@ -67,8 +67,8 @@
     padding: 50px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    text-align: right;
+    align-items: center;
+    text-align: center;
     gap: 100px;
     flex-shrink: 0;
 }

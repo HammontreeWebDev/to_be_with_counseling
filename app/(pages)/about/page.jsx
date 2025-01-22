@@ -65,7 +65,7 @@ export default function about() {
 
                     <div className={`${styles.contentColumn}`}>
                         <p className={`big-body-text text-forest-green`}>
-                        Karah Hammontree MA, RMHCI is a Registered Mental Health Counselor Intern in the State of Florida who is passionate about walking alongside her clients in their search for long-lasting freedom from eating disorders, body image issues, and body shame. In assisting her clients uncover the root issues that have contributed to the development of an unhealthy relationship with food and body, she has witnessed the unequivocal transformation that occurs when one is able to come back home to themselves, utilizing compassion, kindness, and curiosity, in this needed restoration process.
+                        Karah Hammontree MA, RMHCI is passionate about walking alongside her clients in their search for long-lasting freedom from eating disorders, body image issues, and body shame. In assisting her clients uncover the root issues that have contributed to the development of an unhealthy relationship with food and body, she has witnessed the unequivocal transformation that occurs when one is able to come back home to themselves, utilizing compassion, kindness, and curiosity, in this needed restoration process.
                         </p>
 
                         <p className={`big-body-text text-forest-green`}>

@@ -43,7 +43,7 @@ export default function counseling() {
                         <div className={`${styles.servicesColumn}`}>
                             <p className='big-body-text text-forest-green'>$120/up to 50 min session </p>
 
-                            <p className='big-body-text text-forest-green'>We do not accept insurance; however, we can provide you with a bill that you can submit to your insurance for possible reimbursement. It is up to you to contact your insurance and ask about out-of-network benefits for mental health coverage. Many clients have been able to receive partial reimbursement from their insurance company. </p>
+                            <p className='big-body-text text-forest-green'>We do not accept insurance; however, we can provide you with a bill that you can submit to your insurance for possible reimbursement. It is up to you to contact your insurance and ask about out-of-network benefits for mental health coverage. Many clients have been able to receive partial reimbursement from their insurance company.</p>
                         </div>
                     </div>
                 </section>
